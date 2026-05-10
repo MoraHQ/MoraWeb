@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "Mora — Remove the Delay",
+  title: "Mora — AI that completes the loop",
   description:
-    "Mora is a headless financial ecosystem that enables AI agents to plan, negotiate, and settle transactions across web and mobile platforms — no manual checkouts, sub-second execution.",
-  keywords: ["AI payments", "autonomous agents", "headless checkout", "machine payment protocol"],
+    "Mora is an AI agent platform that takes tasks from intent to completion. No forms, no redirects, no manual steps.",
+  keywords: ["AI agents", "autonomous agents", "task completion", "AI that acts"],
   openGraph: {
-    title: "Mora — Remove the Delay",
+    title: "Mora — AI that completes the loop",
     description:
-      "The execution layer for AI agents that settle transactions in under a second.",
+      "AI that completes the loop. From intent to done — no middle steps.",
     type: "website",
   },
 };
@@ -27,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={plusJakarta.variable}>
       <body>{children}</body>
     </html>
   );
