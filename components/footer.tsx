@@ -2,34 +2,49 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-mora-border py-12 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+    <footer className="relative border-t border-white/10 pt-16 pb-10 px-6 overflow-hidden bg-[#080D1A]">
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-12 mb-14">
           {/* Logo + tagline */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-6 h-6 rounded-md bg-gradient-mora flex items-center justify-center">
-                <span className="text-white font-bold text-xs">M</span>
+          <div className="flex-shrink-0">
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-8 h-8 rounded-xl bg-[#4F6EF7] flex items-center justify-center">
+                <span className="text-white font-bold text-sm">M</span>
               </div>
-              <span className="font-semibold text-mora-text text-sm">Mora</span>
+              <span className="font-bold text-white text-base">Mora</span>
             </div>
-            <p className="text-xs text-mora-muted">Remove the delay.</p>
+            <p className="text-sm text-white/45 max-w-[200px] leading-relaxed">
+              AI that completes the loop.
+            </p>
           </div>
 
           {/* Links */}
-          <nav className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 gap-y-3">
+          <nav className="grid grid-cols-2 gap-x-16 gap-y-3">
             {[
-              { group: "Product", links: [{ label: "How it works", href: "#how-it-works" }, { label: "Pillars", href: "#product" }] },
-              { group: "Developers", links: [{ label: "GitHub", href: "https://github.com/Mora-delay" }, { label: "Docs", href: "#" }] },
-              { group: "Company", links: [{ label: "Waitlist", href: "#waitlist" }, { label: "Contact", href: "#" }] },
+              {
+                group: "Product",
+                links: [
+                  { label: "How it works", href: "#how-it-works" },
+                  { label: "Products", href: "#product" },
+                ],
+              },
+              {
+                group: "Company",
+                links: [
+                  { label: "Waitlist", href: "#waitlist" },
+                  { label: "Contact", href: "#" },
+                ],
+              },
             ].map((col) => (
               <div key={col.group}>
-                <p className="text-xs font-medium text-mora-text mb-2">{col.group}</p>
+                <p className="text-xs font-semibold text-white/60 uppercase tracking-[0.1em] mb-4">
+                  {col.group}
+                </p>
                 {col.links.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
-                    className="block text-xs text-mora-muted hover:text-mora-text transition-colors py-0.5"
+                    className="block text-sm text-white/40 hover:text-white/70 transition-colors duration-200 py-1"
                   >
                     {link.label}
                   </a>
@@ -39,18 +54,16 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-mora-border flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-mora-muted">
-            © {year} Mora. All rights reserved.
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/30">
+            &copy; {year} Mora. All rights reserved.
           </p>
-          <p className="text-xs text-mora-muted">
-            Built on{" "}
-            <span className="text-mora-primary">MPP</span>
-            {" · "}
-            <span className="text-mora-primary">Tempo Mainnet</span>
-            {" · "}
-            <span className="text-mora-primary">Stripe</span>
-          </p>
+
+          <div className="flex items-center gap-5">
+            <a href="/privacy" className="text-xs text-white/30 hover:text-white/60 transition-colors duration-200">Privacy Policy</a>
+            <a href="/terms" className="text-xs text-white/30 hover:text-white/60 transition-colors duration-200">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
