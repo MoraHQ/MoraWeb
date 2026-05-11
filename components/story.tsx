@@ -117,7 +117,7 @@ export default function Story() {
                     },
                     {
                       label: "Mora confirmed the details",
-                      detail: "One clarifying message. Done.",
+                      detail: "A quick back-and-forth to nail the details.",
                     },
                     {
                       label: "Transaction completed",

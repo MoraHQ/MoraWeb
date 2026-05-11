@@ -85,7 +85,7 @@ export default function Pillars() {
               <ul className="space-y-3">
                 {[
                   "Restaurants, hotels, flights, car rentals",
-                  "Asks only what it needs, then acts",
+                  "Converses naturally to get what it needs, then acts",
                   "Confirms before every transaction",
                   "Google Assistant support (coming soon)",
                 ].map((feat) => (

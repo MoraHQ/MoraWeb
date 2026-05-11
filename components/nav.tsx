@@ -7,12 +7,12 @@ export default function Nav() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 border-b border-[rgba(201,208,228,0.50)]"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-white/10"
       style={{
-        background: "rgba(211,217,233,0.70)",
+        background: "rgba(8,13,26,0.85)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
-        boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+        boxShadow: "0 1px 8px rgba(0,0,0,0.25)",
       }}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -21,7 +21,7 @@ export default function Nav() {
           <div className="w-8 h-8 rounded-xl bg-[#4F6EF7] flex items-center justify-center">
             <span className="text-white font-bold text-sm tracking-tight">M</span>
           </div>
-          <span className="font-semibold tracking-tight text-[15px] text-[#111827]">
+          <span className="font-semibold tracking-tight text-[15px] text-white">
             Mora
           </span>
         </a>
@@ -36,7 +36,7 @@ export default function Nav() {
             <a
               key={link.label}
               href={link.href}
-              className="px-4 py-2 rounded-lg text-sm transition-all duration-200 text-[#6B7280] hover:text-[#111827] hover:bg-gray-100"
+              className="px-4 py-2 rounded-lg text-sm transition-all duration-200 text-white/70 hover:text-white hover:bg-white/10"
             >
               {link.label}
             </a>
@@ -47,18 +47,15 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#waitlist"
-            className="relative px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 bg-[#F59E0B] text-[#111827] hover:bg-[#D97706] flex items-center gap-2"
+            className="px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 bg-[#F59E0B] text-[#111827] hover:bg-[#D97706]"
           >
             Get early access
-            <span className="text-[10px] font-bold uppercase tracking-wide bg-[#111827]/15 text-[#111827]/70 px-1.5 py-0.5 rounded-md">
-              Soon
-            </span>
           </a>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg transition-all text-[#6B7280] hover:text-[#111827] hover:bg-gray-100"
+          className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg transition-all text-white/70 hover:text-white hover:bg-white/10"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -74,7 +71,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-[rgba(201,208,228,0.50)] px-6 py-5 space-y-1" style={{ background: "rgba(211,217,233,0.85)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}>
+        <div className="md:hidden border-t border-white/10 px-6 py-5 space-y-1" style={{ background: "rgba(8,13,26,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}>
           {[
             { label: "Product", href: "#product" },
             { label: "How it works", href: "#how-it-works" },
@@ -83,13 +80,13 @@ export default function Nav() {
             <a
               key={link.label}
               href={link.href}
-              className="block px-3 py-2 rounded-lg text-sm text-[#6B7280] hover:text-[#111827] hover:bg-gray-100 transition-all"
+              className="block px-3 py-2 rounded-lg text-sm text-white/70 hover:text-white hover:bg-white/10 transition-all"
               onClick={() => setOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <div className="pt-3 border-t border-[#E5E7EB] mt-3">
+          <div className="pt-3 border-t border-white/10 mt-3">
             <a
               href="#waitlist"
               className="block w-full text-center px-4 py-2.5 rounded-xl text-sm font-semibold bg-[#F59E0B] text-[#111827] hover:bg-[#D97706] transition-colors"

@@ -65,12 +65,11 @@ export default function Hero() {
             border: "1px solid rgba(79,110,247,0.20)",
           }}
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x divide-white/10">
+          <div className="grid grid-cols-3 gap-6 md:gap-0 md:divide-x divide-white/10">
             {[
-              { value: "< 2s", label: "Typical transaction", accent: "text-[#818CF8]" },
+              { value: "< 30s", label: "Typical transaction", accent: "text-[#818CF8]" },
               { value: "0", label: "Steps for you", accent: "text-[#F59E0B]" },
               { value: "3", label: "Payment rails", accent: "text-[#818CF8]" },
-              { value: "1000s", label: "Merchants", accent: "text-[#F59E0B]" },
             ].map((stat) => (
               <div key={stat.label} className="text-center md:px-6">
                 <div className={`text-2xl font-bold ${stat.accent}`}>{stat.value}</div>

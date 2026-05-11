@@ -14,7 +14,7 @@ const steps = [
     number: "02",
     title: "It fills the gaps",
     description:
-      "Mora builds a clear picture of the purchase. If something is missing, it asks once. Then it moves.",
+      "Mora has a natural back-and-forth with you to fill in the details — like a good assistant would. It keeps the conversation short and moves forward as soon as it has what it needs.",
     icon: (
       <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125S3.75 11.278 3.75 9m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125S3.75 13.903 3.75 11.625" />

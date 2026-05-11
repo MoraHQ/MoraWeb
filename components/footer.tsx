@@ -19,20 +19,13 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <nav className="grid grid-cols-2 sm:grid-cols-3 gap-x-16 gap-y-3">
+          <nav className="grid grid-cols-2 gap-x-16 gap-y-3">
             {[
               {
                 group: "Product",
                 links: [
                   { label: "How it works", href: "#how-it-works" },
                   { label: "Products", href: "#product" },
-                ],
-              },
-              {
-                group: "Developers",
-                links: [
-                  { label: "Docs", href: "#" },
-                  { label: "API", href: "#" },
                 ],
               },
               {
