@@ -1,6 +1,6 @@
 # Mora Web
 
-Marketing website for [Mora](https://mora.ai) — AI agents that handle checkout.
+Marketing website for [Mora](https://mora.ai), AI agents that handle checkout.
 
 Built with [Next.js 15](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [TypeScript](https://www.typescriptlang.org).
 
