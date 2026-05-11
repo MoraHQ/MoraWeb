@@ -20,10 +20,10 @@ export default function CTA() {
           "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(79,110,247,0.18) 0%, transparent 70%), #080D1A",
       }}
     >
-      {/* Top fade — body white to dark */}
+      {/* Top fade — mirrors hero bottom transition */}
       <div
-        className="absolute top-0 left-0 right-0 h-32 pointer-events-none z-0"
-        style={{ background: "linear-gradient(to top, transparent 0%, #EAEEf9 100%)" }}
+        className="absolute top-0 left-0 right-0 h-80 pointer-events-none z-0"
+        style={{ background: "linear-gradient(to top, transparent 0%, rgba(200,210,232,0.2) 30%, rgba(220,228,244,0.55) 55%, rgba(238,241,251,0.88) 75%, #EEF1FB 100%)" }}
         aria-hidden
       />
 

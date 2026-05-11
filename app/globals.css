@@ -26,9 +26,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Light section gradient bg (makes glass visible) ──── */
+/* ── Light section bg — transparent so body color flows through ── */
 .section-light {
-  background: linear-gradient(145deg, #EAEEf9 0%, #F0F4FD 40%, #E8ECF7 70%, #EFF2FC 100%);
+  background: transparent;
 }
 
 /* ── Gradient text (now solid — no gradient text anywhere) ── */
