@@ -9,7 +9,7 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50 border-b border-white/10"
       style={{
-        background: "rgba(8,13,26,0.85)",
+        background: "rgba(8,13,26,0.97)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         boxShadow: "0 1px 8px rgba(0,0,0,0.25)",

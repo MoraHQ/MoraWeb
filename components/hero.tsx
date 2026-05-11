@@ -83,7 +83,7 @@ export default function Hero() {
       {/* Bottom fade — hero to body */}
       <div
         className="absolute bottom-0 left-0 right-0 h-80 pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, transparent 0%, rgba(200,210,232,0.2) 30%, rgba(220,228,244,0.55) 55%, rgba(234,238,249,0.88) 75%, #EAEEf9 100%)" }}
+        style={{ background: "linear-gradient(to bottom, transparent 0%, rgba(200,210,232,0.2) 30%, rgba(220,228,244,0.55) 55%, rgba(238,241,251,0.88) 75%, #EEF1FB 100%)" }}
         aria-hidden
       />
     </section>

@@ -1,7 +1,7 @@
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/how-it-works";
-// import VideoDemo from "@/components/video-demo"; // No video yet — re-enable when ready
+import VideoDemo from "@/components/video-demo";
 import Story from "@/components/story";
 import Pillars from "@/components/pillars";
 import PaymentRails from "@/components/payment-rails";
@@ -15,7 +15,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <HowItWorks />
-      {/* <VideoDemo /> */}
+      <VideoDemo />
       <Story />
       <Pillars />
       <PaymentRails />
